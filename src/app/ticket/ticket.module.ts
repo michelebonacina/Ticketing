@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { TicketComponent } from './ticket.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
+import { TicketListItemComponent } from './ticket-list-item/ticket-list-item.component';
 
 const routes: Routes = [
     {
@@ -19,7 +20,8 @@ const routes: Routes = [
 @NgModule({
     declarations: [
         TicketComponent,
-        TicketListComponent
+        TicketListComponent,
+        TicketListItemComponent
     ],
     imports: [
         CommonModule,
