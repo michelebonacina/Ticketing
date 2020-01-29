@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr tic-ticket-list-item>
+        <tr *ngFor="let ticketSingolo of elencoTicket" tic-ticket-list-item [ticket]="ticketSingolo">
         </tr>
     </tbody>
 </table>
