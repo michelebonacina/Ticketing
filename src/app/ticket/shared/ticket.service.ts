@@ -44,7 +44,8 @@ export class TicketService
                         findedTicketList.forEach(
                             (findedTicket) =>
                             {
-                                ticketList.push(this.getTicketFromAPI(findedTicket));
+                                const newTicket: Ticket = this.getTicketFromAPI(findedTicket);
+                                ticketList.push(newTicket);
                             }
                         );
                         observer.next(ticketList);
