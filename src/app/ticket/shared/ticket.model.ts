@@ -4,6 +4,7 @@ export class Ticket
     codice: string;
     dataApertura: Date;
     titolo: string;
+    descrizione: string;
     utente: string;
     stato: string;
 

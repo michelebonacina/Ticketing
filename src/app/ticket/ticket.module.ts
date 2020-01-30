@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { TicketComponent } from './ticket.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { TicketListItemComponent } from './ticket-list-item/ticket-list-item.component';
+import { TicketService } from './shared/ticket.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
     {
@@ -25,7 +27,11 @@ const routes: Routes = [
     ],
     imports: [
         CommonModule,
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        HttpClientModule
+    ],
+    providers: [
+        TicketService
     ]
 })
 export class TicketModule { }
