@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+const TestDB = require('./test-db');
 const ticketRoutes = require('./routes/ticket');
+
 
 
 const app = express();
@@ -15,6 +17,9 @@ mongoose.connect(mongoDbURI, mongoDbOptions)
         function() 
         {
             console.log('Database OK');
+            const testDB = new TestDB();
+            testDB.initDB();
+            console.log('Dati OK');
         },
         function(error)
         {
