@@ -1,0 +1,44 @@
+{
+    "ticket": [
+        {
+            "codice": "xa0001",
+            "dataApertura": "2020-01-05",
+            "titolo": "Errore polizza",
+            "descrizione": "Impossibile aprire la polizza 00001",
+            "utente": "Mario",
+            "stato": "Aperto"
+        },
+        {
+            "codice": "xa0002",
+            "dataApertura": "2020-01-10",
+            "titolo": "Errore login",
+            "descrizione": "Utente Marco disattivato",
+            "utente": "Marco",
+            "stato": "Aperto"
+        },
+        {
+            "codice": "xa0003",
+            "dataApertura": "2020-01-10",
+            "titolo": "Errore polizza",
+            "descrizione": "Impossibile modificare la polizza 00003",
+            "utente": "Michele",
+            "stato": "In lavorazione"
+        },
+        {
+            "codice": "xa0004",
+            "dataApertura": "2020-01-12",
+            "titolo": "Errore sistema",
+            "descrizione": "Impossibile accedere al disco del pc Luca",
+            "utente": "Luca",
+            "stato": "Attesa risposta"
+        },
+        {
+            "codice": "xa0005",
+            "dataApertura": "2020-01-21",
+            "titolo": "Errore polizza",
+            "descrizione": "Impossibile aprire la polizza 00010",
+            "utente": "Mario",
+            "stato": "Chiuso"
+        }
+    ]
+}

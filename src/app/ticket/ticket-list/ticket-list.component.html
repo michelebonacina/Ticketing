@@ -1,0 +1,17 @@
+<table class="table table-hover">
+    <thead class="bg-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Codice</th>
+            <th scope="col">Data</th>
+            <th scope="col">Giorni</th>
+            <th scope="col">Titolo</th>
+            <th scope="col">Utente</th>
+            <th scope="col">Stato</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ticketSingolo of elencoTicket" tic-ticket-list-item [ticket]="ticketSingolo">
+        </tr>
+    </tbody>
+</table>
