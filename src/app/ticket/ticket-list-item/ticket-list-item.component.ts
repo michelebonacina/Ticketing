@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Ticket } from '../shared/ticket.model';
 
 @Component({
     selector: '[tic-ticket-list-item]',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TicketListItemComponent implements OnInit
 {
 
-    @Input() ticket;
+    @Input() ticket: Ticket;
 
     constructor() { }
 

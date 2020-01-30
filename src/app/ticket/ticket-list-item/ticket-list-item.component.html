@@ -1,6 +1,7 @@
 <th scope="row">1</th>
 <td>{{ticket.codice}}</td>
-<td>{{ticket.data}}</td>
+<td>{{ticket.dataApertura | date : 'dd/MM/yyyy'}}</td>
+<td>{{ticket.getGiorniApertura()}}</td>
 <td>{{ticket.titolo}}</td>
 <td>{{ticket.utente}}</td>
 <td>{{ticket.stato}}</td>

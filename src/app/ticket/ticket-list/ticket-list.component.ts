@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Ticket } from '../shared/ticket.model';
 
 @Component({
     selector: 'tic-ticket-list',
@@ -8,15 +9,34 @@ import { Component, OnInit } from '@angular/core';
 export class TicketListComponent implements OnInit
 {
 
-    elencoTicket = [
-        {codice: 'XY001', data: '01/01/2020', titolo: "Ticket 1", utente: "Mario", stato: "Aperto"},
-        {codice: 'AB001', data: '01/01/2020', titolo: "Ticket 2", utente: "Mario", stato: "In Corso"},
-        {codice: 'XY002', data: '04/01/2020', titolo: "Ticket 3", utente: "Michele", stato: "Aperto"},
-        {codice: 'AB002', data: '02/01/2020', titolo: "Ticket 4", utente: "Mario", stato: "Attesa Risposta"},
-        {codice: 'AB003', data: '20/01/2020', titolo: "Ticket 5", utente: "Michele", stato: "Aperto"},
-    ];
+    elencoTicket = [];
 
-    constructor() { }
+    constructor() {
+        let ticket = new Ticket();
+        ticket.id = '1';
+        ticket.codice = 'XY001';
+        ticket.dataApertura = new Date('2020-01-04');
+        ticket.titolo = 'Ticket 1';
+        ticket.utente = 'Mario';
+        ticket.stato = 'Attesa Risposta';
+        this.elencoTicket.push(ticket);
+        ticket = new Ticket();
+        ticket.id = '2';
+        ticket.codice = 'AB001';
+        ticket.dataApertura = new Date('2020-01-15');
+        ticket.titolo = 'Ticket 2';
+        ticket.utente = 'Michele';
+        ticket.stato = 'In Corso';
+        this.elencoTicket.push(ticket);
+        ticket = new Ticket();
+        ticket.id = '3';
+        ticket.codice = 'XY002';
+        ticket.dataApertura = new Date('2020-01-18');
+        ticket.titolo = 'Ticket 3';
+        ticket.utente = 'Mario';
+        ticket.stato = 'Aperto';
+        this.elencoTicket.push(ticket);
+     }
 
     ngOnInit()
     {
